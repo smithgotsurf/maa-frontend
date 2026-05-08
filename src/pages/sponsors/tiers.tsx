@@ -68,7 +68,9 @@ export const tiers: Tier[] = [
     title: 'Custom Opportunity',
     price: (
       <>
-        <div className="text-[26px] font-bold font-serif text-secondary my-1.5">Let&rsquo;s Talk</div>
+        <div className="text-[26px] font-bold font-serif text-secondary my-1.5">
+          Let&rsquo;s Talk
+        </div>
         <div className="text-xs text-base-content/50 mb-2.5">we'll work with you</div>
       </>
     ),

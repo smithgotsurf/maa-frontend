@@ -1,8 +1,6 @@
 import { B_URL } from '../../utils';
 
 export const hero = {
-  /** The headline JSX-friendly version is rendered in index.tsx; this is the plain string. */
-  headline: 'Meadow Athletic Association',
   subhead:
     'Youth recreational sports for the Meadow community. Building character, teamwork, and lifelong memories.',
   backgroundImage: B_URL + 'static/field-1.jpg',

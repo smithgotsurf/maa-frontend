@@ -4,7 +4,7 @@ import { programs } from './programs';
 function Hero() {
   return (
     <div
-      className="relative bg-cover bg-center px-7 text-white text-center overflow-hidden"
+      className="relative bg-cover bg-center text-white text-center overflow-hidden"
       style={{
         backgroundImage: `linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.78)),url('${hero.backgroundImage}')`,
         padding: '64px 28px 180px',

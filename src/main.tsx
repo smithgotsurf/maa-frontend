@@ -1,22 +1,26 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { HashRouter } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
+import App from './App';
+import HomePage from './pages/home';
+import AboutPage from './pages/about';
+import FaqPage from './pages/faq';
+import FieldsPage from './pages/fields';
+import SponsorsPage from './pages/sponsors';
 import './index.css';
-
-// eslint-disable-next-line react-refresh/only-export-components
-function Placeholder() {
-  return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
-      <h1 className="text-[30px] font-bold mb-1.5">MAA</h1>
-      <p>Site under construction.</p>
-    </div>
-  );
-}
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <HashRouter>
-      <Placeholder />
+      <Routes>
+        <Route element={<App />}>
+          <Route index element={<HomePage />} />
+          <Route path="about" element={<AboutPage />} />
+          <Route path="faq" element={<FaqPage />} />
+          <Route path="field-rentals" element={<FieldsPage />} />
+          <Route path="sponsorship" element={<SponsorsPage />} />
+        </Route>
+      </Routes>
     </HashRouter>
   </StrictMode>,
 );

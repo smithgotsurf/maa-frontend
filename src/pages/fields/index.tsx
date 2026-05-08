@@ -55,9 +55,7 @@ export default function FieldsPage() {
       <p className="text-[13px] text-base-content/50 mt-3">
         Example: 1 hr without lights + 1 hr with lights = $15 + $35 = $50
       </p>
-      <p className="text-[13px] text-base-content/50 mt-4">
-        To reserve, contact {contactEmail}.
-      </p>
+      <p className="text-[13px] text-base-content/50 mt-4">To reserve, contact {contactEmail}.</p>
     </div>
   );
 }

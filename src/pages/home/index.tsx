@@ -24,8 +24,8 @@ function Hero() {
 function Intro() {
   return (
     <div className="card bg-white shadow-[0_3px_20px_rgba(0,0,0,.05)] border border-base-300 rounded-xl p-5 -mt-34 max-w-[600px] mx-auto relative z-10 mb-10">
-      <h3 className="text-[17px] font-bold">{intro.heading}</h3>
-      <p className="text-[13px] text-base-content/50 mt-0.5 leading-relaxed">{intro.body}</p>
+      <h3 className="text-xl font-bold">{intro.heading}</h3>
+      <p className="text-[17px] text-base-content/70 mt-1 leading-relaxed">{intro.body}</p>
     </div>
   );
 }
@@ -69,7 +69,7 @@ function Outro() {
   return (
     <div className="mt-10 mb-4 text-center">
       <h3 className="text-[20px] font-bold mb-1">{outro.heading}</h3>
-      <p className="text-[14px] text-base-content/60 leading-relaxed max-w-[600px] mx-auto">
+      <p className="text-[17px] text-base-content/70 leading-relaxed max-w-[600px] mx-auto">
         {outro.body}
       </p>
     </div>

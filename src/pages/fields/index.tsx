@@ -1,4 +1,5 @@
 import { B_URL } from '../../utils';
+import { contactEmail } from '../../content';
 
 export default function FieldsPage() {
   return (
@@ -55,7 +56,7 @@ export default function FieldsPage() {
         Example: 1 hr without lights + 1 hr with lights = $15 + $35 = $50
       </p>
       <p className="text-[13px] text-base-content/50 mt-4">
-        To reserve, contact meadowathleticassociation@gmail.com.
+        To reserve, contact {contactEmail}.
       </p>
     </div>
   );

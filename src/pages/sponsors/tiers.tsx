@@ -1,4 +1,5 @@
 import { B_URL, Ic, icons } from '../../utils';
+import { contactEmail } from '../../content';
 
 export type Tier = {
   icon: string;
@@ -78,7 +79,7 @@ export const tiers: Tier[] = [
     note: "Have another idea? We'd love to hear it.",
     cta: (
       <a
-        href="mailto:meadowathleticassociation@gmail.com"
+        href={`mailto:${contactEmail}`}
         className="inline-flex items-center gap-1.5 mt-3.5 text-secondary font-semibold text-[13px] no-underline"
       >
         <Ic d={icons.mail} s={13} /> Contact Us

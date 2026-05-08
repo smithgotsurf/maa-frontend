@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Outlet, NavLink, Link } from 'react-router-dom';
 import { B_URL, Ic, icons } from './utils';
+import Footer from './components/Footer';
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,7 +13,7 @@ export default function App() {
   ];
 
   return (
-    <div>
+    <div className="min-h-screen flex flex-col">
       <header className="bg-neutral text-neutral-content sticky top-0 z-50 px-7 h-14 flex items-center justify-between">
         <div className="flex-1">
           <Link
@@ -69,6 +70,8 @@ export default function App() {
         />
       )}
       <nav
+        inert={!menuOpen}
+        aria-hidden={!menuOpen}
         className={`fixed top-0 right-0 h-full w-64 bg-base-100 text-base-content z-50 shadow-xl flex flex-col p-4 gap-1 transition-transform duration-200 lg:hidden ${menuOpen ? 'translate-x-0' : 'translate-x-full'}`}
       >
         {nav.map((n) => (
@@ -85,7 +88,10 @@ export default function App() {
           </NavLink>
         ))}
       </nav>
-      <Outlet />
+      <main className="flex-1">
+        <Outlet />
+      </main>
+      <Footer />
     </div>
   );
 }

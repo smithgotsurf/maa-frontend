@@ -1,6 +1,7 @@
 import { Ic, icons } from '../../utils';
 import { board } from './board';
-import { intro, boardLead, contactEmail, facebookUrl } from './copy';
+import { intro, boardLead } from './copy';
+import ContactSection from '../../components/ContactSection';
 
 export default function AboutPage() {
   const officers = board.filter((m) => m.role);
@@ -38,27 +39,7 @@ export default function AboutPage() {
         ))}
       </div>
       <h2 className="text-xl font-bold mb-4">Contact</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-        <div className="card bg-white border border-base-300 rounded-[10px] p-5">
-          <h3 className="text-base font-bold mb-1">Get in Touch</h3>
-          <p className="flex items-center gap-1.5 text-sm text-base-content/50">
-            <Ic d={icons.mail} s={14} />
-            {contactEmail}
-          </p>
-        </div>
-        <div className="card bg-white border border-base-300 rounded-[10px] p-5">
-          <h3 className="text-base font-bold mb-1">Follow Us</h3>
-          <a
-            href={facebookUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-[#1877F2] font-semibold text-sm no-underline"
-          >
-            <Ic d={icons.fb} s={16} />
-            Join us on Facebook
-          </a>
-        </div>
-      </div>
+      <ContactSection />
     </div>
   );
 }

@@ -12,13 +12,19 @@ export default function FaqPage() {
       <div className="w-11 h-[3px] bg-primary rounded-sm mb-4" />
       {questions.map((f, i) => (
         <div className="border border-secondary rounded-[9px] p-4 mb-2" key={i}>
-          <div
-            className="flex items-center justify-between cursor-pointer"
-            onClick={() => setOpen(open === i ? null : i)}
-          >
-            <h4 className="text-base font-semibold">{f.q}</h4>
-            <span className="text-base-content/30 ml-2">{open === i ? '▾' : '▸'}</span>
-          </div>
+          <h4 className="text-base font-semibold">
+            <button
+              type="button"
+              className="flex items-center justify-between w-full cursor-pointer text-left"
+              onClick={() => setOpen(open === i ? null : i)}
+              aria-expanded={open === i}
+            >
+              <span>{f.q}</span>
+              <span aria-hidden="true" className="text-base-content/30 ml-2 font-normal">
+                {open === i ? '▾' : '▸'}
+              </span>
+            </button>
+          </h4>
           {open === i && (
             <div className="text-sm text-base-content/50 leading-relaxed mt-2.5 bg-base-100 rounded-[5px] p-2">
               {f.a}

@@ -1,8 +1,13 @@
 import { Ic } from '../../utils';
+import { contactEmail } from '../../content';
 import { tiers } from './tiers';
 
 function Check() {
-  return <span className="text-primary font-bold mr-1.5">✓</span>;
+  return (
+    <span aria-hidden="true" className="text-primary font-bold mr-1.5">
+      ✓
+    </span>
+  );
 }
 
 export default function SponsorsPage() {
@@ -39,7 +44,7 @@ export default function SponsorsPage() {
         ))}
       </div>
       <p className="text-[13px] text-base-content/50 mt-5">
-        To get started, contact us at meadowathleticassociation@gmail.com.
+        To get started, contact us at {contactEmail}.
       </p>
     </div>
   );

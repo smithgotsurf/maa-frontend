@@ -8,15 +8,28 @@ export const hero = {
 
 export const intro = {
   heading: 'Welcome',
-  body: 'MAA has served the Meadow community since 1976. Whether your child is just starting out or chasing a championship, we have a program for every age and season.',
+  body: 'MAA has served the Meadow, NC community since 1976. Whether your child is just starting out or chasing a championship, we have a program for every age and season.',
 };
 
 export const programsSection = {
   heading: 'What We Offer',
-  subhead: 'Youth sports across three seasons',
+  subhead: 'Youth sports across three seasons.',
 };
 
-export const outro = {
+export const teasers = {
+  fields: {
+    heading: 'Book a Field',
+    body: 'Day rentals on the Meadow ballfields for parties, practices, and tournaments.',
+    cta: 'View rental info',
+  },
+  sponsors: {
+    heading: 'Become a Sponsor',
+    body: 'Support local youth sports and reach families across Meadow.',
+    cta: 'See sponsorship tiers',
+  },
+};
+
+export const getInvolved = {
   heading: 'Get Involved',
-  body: 'Have questions about registration, want to coach, or interested in sponsoring? We would love to hear from you.',
+  body: 'Have questions about the MAA or want to volunteer? We would love to hear from you.',
 };

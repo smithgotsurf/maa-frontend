@@ -62,34 +62,3 @@ h3 {
   transform: translateY(-1px);
   box-shadow: 0 4px 16px rgba(197, 160, 78, 0.3);
 }
-
-.table {
-  background: #fff;
-  border: 1px solid #eee;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.table th {
-  background: var(--color-base-200);
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 0.6px;
-  color: var(--color-base-content, #6b6b6b);
-  opacity: 0.5;
-  font-weight: 600;
-  border-bottom: 1px solid #eee;
-}
-
-.table td {
-  font-size: 12px;
-  border-bottom: 1px solid #eee;
-}
-
-.table tr:last-child td {
-  border-bottom: none;
-}
-
-.table tr:hover td {
-  background: #fbf7ec;
-}

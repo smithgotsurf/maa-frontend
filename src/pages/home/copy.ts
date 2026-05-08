@@ -24,7 +24,7 @@ export const teasers = {
   },
   sponsors: {
     heading: 'Become a Sponsor',
-    body: 'Support local youth sports and reach families across Meadow.',
+    body: 'Support local youth sports and reach families across Meadow. There are several ways to get involved.',
     cta: 'See sponsorship tiers',
   },
 };

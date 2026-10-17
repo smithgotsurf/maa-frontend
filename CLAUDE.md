@@ -12,10 +12,10 @@ Meadow Athletic Association — marketing/info website. React SPA deployed to Gi
 
 ## Tech stack
 
-- React 19, Vite 6, react-router-dom v7 (HashRouter)
-- TypeScript 5 (strict mode)
+- React 19, Vite 8, react-router-dom v7 (HashRouter)
+- TypeScript 6 (strict mode) — pinned to 6.0.x (`~`) because typescript-eslint doesn't support 6.1+ or 7 yet
 - Tailwind CSS 4 + DaisyUI 5 (custom "maa" theme)
-- ESLint (flat config) + Prettier
+- ESLint 10 (flat config) + Prettier
 - No tests — prototype-grade code
 - Deployed to GitHub Pages via `.github/workflows/deploy.yml`; HashRouter + `base: '/maa-frontend/'` in vite.config.ts
 

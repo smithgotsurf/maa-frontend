@@ -8,11 +8,11 @@ Vibe coded with Claude
 
 ## Tech
 
-- React 19 + TypeScript 5 (strict mode)
-- Vite 6
+- React 19 + TypeScript 6 (strict mode)
+- Vite 8
 - react-router-dom v7 (HashRouter)
 - Tailwind CSS 4 + DaisyUI 5
-- ESLint + Prettier
+- ESLint 10 + Prettier
 
 ## Project Structure
 

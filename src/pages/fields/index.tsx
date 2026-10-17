@@ -12,7 +12,7 @@ export default function FieldsPage() {
       </p>
       <div className="rounded-xl overflow-hidden my-4 border border-base-300 relative">
         <img
-          src={B_URL + 'static/fields-aerial.jpg'}
+          src={B_URL + 'static/fields-aerial.webp'}
           alt="Aerial view of MAA fields"
           className="w-full block max-h-[420px] object-cover object-center"
         />

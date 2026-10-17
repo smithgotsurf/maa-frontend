@@ -17,6 +17,7 @@ Meadow Athletic Association — marketing/info website. React SPA deployed to Gi
 - Tailwind CSS 4 + DaisyUI 5 (custom "maa" theme)
 - ESLint 10 (flat config) + Prettier
 - No tests — prototype-grade code
+- Node version pinned in `.nvmrc` (CI reads it too); `engines` in package.json sets the minimum
 - Deployed to GitHub Pages via `.github/workflows/deploy.yml`; HashRouter + `base: '/maa-frontend/'` in vite.config.ts
 
 ## Project structure
@@ -38,7 +39,7 @@ src/
     fields/    — index.tsx
     sponsors/  — index.tsx + tiers.tsx
     not-found/ — index.tsx (catch-all route)
-public/static/       — images, logo, sponsorship PDF
+public/static/       — images (photos as WebP; field-1.jpg kept for og:image), logo, sponsorship PDF
 ```
 
 Each page is a folder with `index.tsx` (default-exported component) plus sibling files for copy/data (e.g. `copy.ts`, `programs.ts`, `board.ts`, `questions.tsx`, `tiers.tsx`). Keep page-specific content in those siblings; only put genuinely shared content in `src/content.ts`.

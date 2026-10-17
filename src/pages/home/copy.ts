@@ -3,7 +3,7 @@ import { B_URL } from '../../utils';
 export const hero = {
   subhead:
     'Youth recreational sports for the Meadow community. Building character, teamwork, and lifelong memories.',
-  backgroundImage: B_URL + 'static/field-1.jpg',
+  backgroundImage: B_URL + 'static/field-1.webp',
 };
 
 export const intro = {

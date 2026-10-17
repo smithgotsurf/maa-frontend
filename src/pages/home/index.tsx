@@ -86,7 +86,7 @@ function MoreOnTheSite() {
         className="card bg-white border border-base-300 rounded-[10px] overflow-hidden no-underline text-base-content hover:opacity-90 transition-opacity"
       >
         <img
-          src={B_URL + 'static/fields-aerial.jpg'}
+          src={B_URL + 'static/fields-aerial.webp'}
           alt="MAA fields"
           className="w-full h-[140px] object-cover"
         />

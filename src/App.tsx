@@ -50,7 +50,7 @@ export default function App() {
           ))}
         </nav>
         <button
-          className="btn btn-ghost lg:hidden"
+          className="btn btn-ghost lg:hidden text-neutral-content"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Menu"
         >

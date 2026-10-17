@@ -33,7 +33,7 @@ src/
     Footer.tsx
     ContactSection.tsx
   pages/
-    home/      — index.tsx + copy.ts + programs.ts
+    home/      — index.tsx (composition) + one file per section + copy.ts + programs.ts
     about/     — index.tsx + copy.ts + board.ts
     faq/       — index.tsx + questions.tsx
     fields/    — index.tsx
@@ -66,6 +66,18 @@ Nav uses `NavLink` with `isActive` for highlighting. Logo links to `/`; no "Home
 - Tailwind utility classes for layout and spacing
 - Shared icons/helpers live in `utils.tsx`; shared layout in `components/`
 - Page components are default exports from `pages/<name>/index.tsx`
+
+## Shared with maa-prototype
+
+`maa-prototype` (the future full app) keeps these paths byte-identical to this repo. Change them here first, then copy them across:
+
+- `src/content.ts`, `src/components/`
+- `src/pages/about/`, `faq/`, `fields/`, `sponsors/`, `not-found/`
+- `src/pages/home/` except `index.tsx` (the prototype adds `OpenSeason.tsx` and its own `index.tsx`)
+- `.github/workflows/deploy.yml`, `.nvmrc`, `.prettierrc`, `tsconfig.json`, `tsconfig.app.json`, `eslint.config.js`
+- `public/` (everything)
+
+The prototype's `CLAUDE.md` has the command that checks them.
 
 ## Styling
 

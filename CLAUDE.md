@@ -74,8 +74,8 @@ Nav uses `NavLink` with `isActive` for highlighting. Logo links to `/`; no "Home
 - `src/content.ts`, `src/components/`
 - `src/pages/about/`, `faq/`, `fields/`, `sponsors/`, `not-found/`
 - `src/pages/home/` except `index.tsx` (the prototype adds `OpenSeason.tsx` and its own `index.tsx`)
-- `.github/workflows/deploy.yml`, `.nvmrc`, `.prettierrc`, `tsconfig*.json`, `eslint.config.js`
-- `public/favicon.png`, `public/static/field-1.webp`, `public/static/fields-aerial.webp`, `public/static/sports-balls.jpg`
+- `.github/workflows/deploy.yml`, `.nvmrc`, `.prettierrc`, `tsconfig.json`, `tsconfig.app.json`, `eslint.config.js`
+- `public/` (everything)
 
 The prototype's `CLAUDE.md` has the command that checks them.
 

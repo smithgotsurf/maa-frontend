@@ -1,7 +1,7 @@
 export type ProgramItem = { name: string; ages: string[] };
-export type Season = { label: string; items: ProgramItem[] };
+export type SeasonOffering = { label: string; items: ProgramItem[] };
 
-export const programs: Season[] = [
+export const programs: SeasonOffering[] = [
   {
     label: 'Spring',
     items: [

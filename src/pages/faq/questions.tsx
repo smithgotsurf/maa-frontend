@@ -30,11 +30,11 @@ export const questions: FaqEntry[] = [
           <li>Soccer (6U Coed, 8U Boys, 8U Girls)</li>
           <li>Baseball (8U, 10U, 12U — boys)</li>
           <li>Softball (8U, 10U, 12U — girls)</li>
+          <li>Volleyball (10U, 12U)</li>
         </ul>
         <Sh l="Winter" />
         <ul className="pl-5 mt-1.5 leading-[1.9] list-disc">
           <li>Basketball (6U Coed, 8U/10U/12U/15U boys, 8U/10U/12U girls)</li>
-          <li>Volleyball (8U, 10U, 12U)</li>
         </ul>
       </>
     ),
@@ -64,20 +64,8 @@ export const questions: FaqEntry[] = [
         <Sh l="Fall" />
         Practices begin in late August; games start mid-September.
         <Sh l="Winter" />
-        Practices begin in early December; games start in early January.
-      </>
-    ),
-  },
-  {
-    q: 'When do practices start?',
-    a: (
-      <>
-        <Sh l="Spring" first />
-        Baseball, softball, T-Ball, and T-Shirt practices begin in March.
-        <Sh l="Fall" />
-        Soccer practices begin in late August.
-        <Sh l="Winter" />
-        Volleyball practices begin in early December.
+        Practices begin in early December; games start in early January. Practices are held on
+        Saturdays, and older age groups also have some practices during the week.
       </>
     ),
   },
@@ -86,12 +74,14 @@ export const questions: FaqEntry[] = [
     a: (
       <>
         <Sh l="Spring" first />
-        Baseball and softball games are mostly Monday, Tuesday, and Thursday evenings. T-Ball games
-        start at 6:30 PM; T-Shirt games start at 7:15–7:30 PM.
+        Games are mostly Monday, Tuesday, and Thursday evenings. The first game starts at 6:30 PM;
+        the second starts at 7:30 or 7:45 PM, depending on the sport.
         <Sh l="Fall" />
-        Soccer games are mostly Monday, Tuesday, and Thursday.
+        Games are mostly Monday, Tuesday, and Thursday evenings. The first game starts at 6:30 PM;
+        the second starts at 7:30 or 7:45 PM, depending on the sport.
         <Sh l="Winter" />
-        Volleyball games are mostly Saturday with some Tuesday and Thursday.
+        Games are held on Saturdays, starting at 9:00 AM and running into the afternoon, with an
+        occasional weeknight game.
       </>
     ),
   },

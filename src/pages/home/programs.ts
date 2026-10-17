@@ -17,13 +17,11 @@ export const programs: Season[] = [
       { name: 'Soccer', ages: ['6U', '8U'] },
       { name: 'Baseball', ages: ['8U', '10U', '12U'] },
       { name: 'Softball', ages: ['8U', '10U', '12U'] },
+      { name: 'Volleyball', ages: ['10U', '12U'] },
     ],
   },
   {
     label: 'Winter',
-    items: [
-      { name: 'Basketball', ages: ['6U', '8U', '10U', '12U', '15U'] },
-      { name: 'Volleyball', ages: ['8U', '10U', '12U'] },
-    ],
+    items: [{ name: 'Basketball', ages: ['6U', '8U', '10U', '12U', '15U'] }],
   },
 ];

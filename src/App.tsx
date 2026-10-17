@@ -1,10 +1,16 @@
-import { useState } from 'react';
-import { Outlet, NavLink, Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { Outlet, NavLink, Link, useLocation } from 'react-router-dom';
 import { B_URL, Ic, icons } from './utils';
 import Footer from './components/Footer';
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   const nav: Array<{ to: string; ic: string; l: string }> = [
     { to: '/about', ic: icons.info, l: 'About' },
     { to: '/faq', ic: icons.help, l: 'FAQ' },

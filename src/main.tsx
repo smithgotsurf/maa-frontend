@@ -7,6 +7,7 @@ import AboutPage from './pages/about';
 import FaqPage from './pages/faq';
 import FieldsPage from './pages/fields';
 import SponsorsPage from './pages/sponsors';
+import NotFoundPage from './pages/not-found';
 import './index.css';
 
 createRoot(document.getElementById('root')!).render(
@@ -19,6 +20,7 @@ createRoot(document.getElementById('root')!).render(
           <Route path="faq" element={<FaqPage />} />
           <Route path="field-rentals" element={<FieldsPage />} />
           <Route path="sponsorship" element={<SponsorsPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
     </HashRouter>

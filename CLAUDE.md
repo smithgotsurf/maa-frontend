@@ -26,7 +26,7 @@ src/
   main.tsx          — HashRouter, route definitions
   App.tsx           — layout shell (navbar, mobile drawer, Outlet, Footer)
   content.ts        — shared site content/copy
-  utils.tsx         — shared utilities (Ic icon helper, icons map, B_URL, PAGE_PATHS)
+  utils.tsx         — shared utilities (Ic icon helper, icons map, B_URL, PAGE_PATHS, usePageTitle)
   index.css         — Tailwind + DaisyUI theme configuration
   components/
     Footer.tsx
@@ -37,6 +37,7 @@ src/
     faq/       — index.tsx + questions.tsx
     fields/    — index.tsx
     sponsors/  — index.tsx + tiers.tsx
+    not-found/ — index.tsx (catch-all route)
 public/static/       — images, logo, sponsorship PDF
 ```
 
@@ -53,8 +54,9 @@ Routes defined in `main.tsx` inside a HashRouter. `App.tsx` renders the layout w
 | `/faq` | FaqPage |
 | `/field-rentals` | FieldsPage |
 | `/sponsorship` | SponsorsPage |
+| `*` | NotFoundPage |
 
-Nav uses `NavLink` with `isActive` for highlighting. Logo links to `/`; no "Home" nav item. Path constants are in `utils.tsx` as `PAGE_PATHS`.
+Nav uses `NavLink` with `isActive` for highlighting. Logo links to `/`; no "Home" nav item. Path constants are in `utils.tsx` as `PAGE_PATHS`. Each page calls `usePageTitle()` to set the browser tab title; `App.tsx` scrolls to top on route change.
 
 ## Coding conventions
 

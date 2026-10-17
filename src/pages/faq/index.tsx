@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { PAGE_PATHS } from '../../utils';
+import { PAGE_PATHS, usePageTitle } from '../../utils';
 import { questions } from './questions';
 
 export default function FaqPage() {
+  usePageTitle('FAQ');
   const navigate = useNavigate();
   const [open, setOpen] = useState<number | null>(null);
   return (

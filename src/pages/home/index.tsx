@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { B_URL, PAGE_PATHS } from '../../utils';
+import { B_URL, PAGE_PATHS, usePageTitle } from '../../utils';
 import ContactSection from '../../components/ContactSection';
 import { hero, intro, programsSection, getInvolved, teasers } from './copy';
 import { programs } from './programs';
@@ -119,6 +119,7 @@ function MoreOnTheSite() {
 }
 
 export default function HomePage() {
+  usePageTitle();
   return (
     <div>
       <Hero />

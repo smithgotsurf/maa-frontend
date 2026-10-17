@@ -1,4 +1,6 @@
 /* eslint-disable react-refresh/only-export-components */
+import { useEffect } from 'react';
+
 export const B_URL: string = import.meta.env.BASE_URL;
 
 interface IcProps {
@@ -41,3 +43,12 @@ export const PAGE_PATHS = {
   fields: '/field-rentals',
   sponsors: '/sponsorship',
 } as const;
+
+const SITE_NAME = 'Meadow Athletic Association';
+
+/** Sets the browser tab title; pass nothing for the home page. */
+export function usePageTitle(title?: string) {
+  useEffect(() => {
+    document.title = title ? `${title} | ${SITE_NAME}` : SITE_NAME;
+  }, [title]);
+}

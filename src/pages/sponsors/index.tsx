@@ -1,4 +1,4 @@
-import { Ic } from '../../utils';
+import { Ic, usePageTitle } from '../../utils';
 import { contactEmail } from '../../content';
 import { tiers } from './tiers';
 
@@ -11,6 +11,7 @@ function Check() {
 }
 
 export default function SponsorsPage() {
+  usePageTitle('Sponsorship');
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
       <h1 className="text-[30px] font-bold mb-1.5">Become a Sponsor</h1>

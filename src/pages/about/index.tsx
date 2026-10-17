@@ -1,9 +1,10 @@
-import { Ic, icons } from '../../utils';
+import { Ic, icons, usePageTitle } from '../../utils';
 import { board } from './board';
 import { intro, boardLead } from './copy';
 import ContactSection from '../../components/ContactSection';
 
 export default function AboutPage() {
+  usePageTitle('About');
   const officers = board.filter((m) => m.role);
   const members = board.filter((m) => !m.role);
   return (

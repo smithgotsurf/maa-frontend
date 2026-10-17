@@ -21,7 +21,7 @@ src/
   main.tsx              # HashRouter + route definitions
   App.tsx               # Layout shell (navbar, mobile drawer, Outlet, Footer)
   content.ts            # Shared site content/copy
-  utils.tsx             # Shared utilities, icons, B_URL, PAGE_PATHS
+  utils.tsx             # Shared utilities, icons, B_URL, PAGE_PATHS, usePageTitle
   index.css             # Tailwind + DaisyUI theme configuration
   components/
     Footer.tsx
@@ -32,6 +32,7 @@ src/
     faq/       # index.tsx + questions.tsx
     fields/    # index.tsx
     sponsors/  # index.tsx + tiers.tsx
+    not-found/ # index.tsx (catch-all route)
 public/static/          # Images, logo, sponsorship PDF
 ```
 

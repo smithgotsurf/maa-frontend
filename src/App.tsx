@@ -94,7 +94,7 @@ export default function App() {
           </NavLink>
         ))}
       </nav>
-      <main className="flex-1">
+      <main className="flex flex-1 flex-col">
         <Outlet />
       </main>
       <Footer />

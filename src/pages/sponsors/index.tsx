@@ -1,6 +1,7 @@
 import { Ic, usePageTitle } from '../../utils';
 import { contactEmail } from '../../content';
 import { tiers } from './tiers';
+import PageColumn from '../../components/PageColumn';
 
 function Check() {
   return (
@@ -13,7 +14,7 @@ function Check() {
 export default function SponsorsPage() {
   usePageTitle('Sponsorship');
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
+    <PageColumn>
       <h1 className="text-[30px] font-bold mb-1.5">Become a Sponsor</h1>
       <div className="w-11 h-[3px] bg-primary rounded-sm mb-4" />
       <p className="text-[17px] text-base-content/70 leading-relaxed mb-3">
@@ -47,6 +48,6 @@ export default function SponsorsPage() {
       <p className="text-[13px] text-base-content/50 mt-5">
         To get started, contact us at {contactEmail}.
       </p>
-    </div>
+    </PageColumn>
   );
 }

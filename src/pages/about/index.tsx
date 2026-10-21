@@ -2,13 +2,14 @@ import { Ic, icons, usePageTitle } from '../../utils';
 import { board } from './board';
 import { intro, boardLead } from './copy';
 import ContactSection from '../../components/ContactSection';
+import PageColumn from '../../components/PageColumn';
 
 export default function AboutPage() {
   usePageTitle('About');
   const officers = board.filter((m) => m.role);
   const members = board.filter((m) => !m.role);
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
+    <PageColumn>
       <h1 className="text-[30px] font-bold mb-1.5">About the Meadow Athletic Association</h1>
       <div className="w-11 h-[3px] bg-primary rounded-sm mb-4" />
       <p className="text-[17px] text-base-content/70 leading-relaxed mb-3">{intro}</p>
@@ -41,6 +42,6 @@ export default function AboutPage() {
       </div>
       <h2 className="text-xl font-bold mb-4">Contact</h2>
       <ContactSection />
-    </div>
+    </PageColumn>
   );
 }

@@ -1,10 +1,11 @@
 import { B_URL, usePageTitle } from '../../utils';
 import { contactEmail } from '../../content';
+import PageColumn from '../../components/PageColumn';
 
 export default function FieldsPage() {
   usePageTitle('Field Rentals');
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
+    <PageColumn>
       <h1 className="text-[30px] font-bold mb-1.5">Field Rentals</h1>
       <div className="w-11 h-[3px] bg-primary rounded-sm mb-4" />
       <p className="text-[17px] text-base-content/70 leading-relaxed mb-3">
@@ -57,6 +58,6 @@ export default function FieldsPage() {
         Example: 1 hr without lights + 1 hr with lights = $15 + $35 = $50
       </p>
       <p className="text-[13px] text-base-content/50 mt-4">To reserve, contact {contactEmail}.</p>
-    </div>
+    </PageColumn>
   );
 }

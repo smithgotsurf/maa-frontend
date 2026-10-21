@@ -2,13 +2,14 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { PAGE_PATHS, usePageTitle } from '../../utils';
 import { questions } from './questions';
+import PageColumn from '../../components/PageColumn';
 
 export default function FaqPage() {
   usePageTitle('FAQ');
   const navigate = useNavigate();
   const [open, setOpen] = useState<number | null>(null);
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
+    <PageColumn>
       <h1 className="text-[30px] font-bold mb-1.5">Frequently Asked Questions</h1>
       <div className="w-11 h-[3px] bg-primary rounded-sm mb-4" />
       {questions.map((f, i) => (
@@ -41,6 +42,6 @@ export default function FaqPage() {
           )}
         </div>
       ))}
-    </div>
+    </PageColumn>
   );
 }

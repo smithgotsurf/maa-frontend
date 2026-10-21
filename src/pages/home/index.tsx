@@ -1,4 +1,5 @@
 import { usePageTitle } from '../../utils';
+import PageColumn from '../../components/PageColumn';
 import Hero from './Hero';
 import Intro from './Intro';
 import ProgramsOffered from './ProgramsOffered';
@@ -8,14 +9,14 @@ import GetInvolved from './GetInvolved';
 export default function HomePage() {
   usePageTitle();
   return (
-    <div>
+    <>
       <Hero />
-      <div className="max-w-4xl mx-auto px-4 py-6">
+      <PageColumn className="pt-6 pb-18">
         <Intro />
         <ProgramsOffered />
         <MoreOnTheSite />
         <GetInvolved />
-      </div>
-    </div>
+      </PageColumn>
+    </>
   );
 }

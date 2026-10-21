@@ -90,7 +90,7 @@ The prototype's `CLAUDE.md` has the command that checks them.
 - The homepage hero has visitor-selectable themes: `THEMES` in `src/components/theme.ts` (Home Plate, Four Fields, Gold Lines). The default is `DEFAULT_THEME` (`four-fields`)
 - The visitor's pick is stored in `localStorage` under `maa_theme`; an unknown or unreadable value falls back to the default. The footer switch shows on the homepage only
 - Subpage bands don't follow the theme; each page picks its band art
-- Adding a theme: one `THEMES` entry, one `HeroArtId` with its art in `HeroArt.tsx`, and one swatch in `ThemeSwitch.tsx`
+- Adding a theme: one `THEMES` entry (its id becomes a `ThemeId` automatically). If it needs new art, add the art id to `HeroArtId`; TypeScript then flags the two places that need it, a `case` in `HeroArt.tsx` and a swatch in `ThemeSwitch.tsx`
 - Design and plans: `../maa-prototype/docs/plans/homepage-themes/`
 
 ## Styling
@@ -101,7 +101,7 @@ The prototype's `CLAUDE.md` has the command that checks them.
 - Fonts: Playfair Display (headings via `font-serif`) + Source Sans 3 (body via `font-sans`). Both loaded from Google Fonts in `index.html` — ensure needed weights are included when using new weights
 - Body background overridden to `base-200` (`#F5F4F0`) with a fine paper grain in `index.css`; use `bg-white`/`bg-base-100` for cards/containers that need to stand out from the page
 - Every page wraps its content in `PageColumn` (plain tan over the grain, a thin gold edge, runs down to the footer); the homepage passes `className="pt-6 pb-18"`
-- Every subpage starts with `<PageBand title="…" />` in place of an `h1`. Only Field Rentals uses `art="photo"`; the rest use the default line art
+- Every subpage starts with `<PageBand title="…" />`, which renders the page's `h1`. Only Field Rentals uses `art="photo"`; the rest use the default line art
 - Antialiased font smoothing set on body in `index.css`
 - No custom CSS files — all styling via Tailwind utilities + DaisyUI components
 - DaisyUI `btn` class overrides font-size/weight/color — when matching specific designs, set these explicitly on btn elements
